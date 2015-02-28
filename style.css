@@ -1,0 +1,230 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	display:table;
+	margin: 0 0 0 0;
+}
+
+.row{
+	width: 100%;
+	height:100%;
+	margin: 0 0 0 0;
+}
+
+.navbar {
+	margin: 0 0 0 0;
+	border-radius: 0;
+	height: 10%;
+}
+
+#main{
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 0;
+}
+
+#leftside {
+	height:100%;
+	padding: 0 0 0 0;
+	background-color: white;
+}
+
+#rightside{
+	height:100%;
+	background-color: #2B2B2B;
+	padding: 0 0 0 0;
+}
+
+#artist {
+	height:25px;
+	width:25px
+}
+
+#album {
+	height:18px;
+	width:18px;
+}
+
+h4 {
+	font-weight:bold;
+	margin: 0 0 0 5%;
+}
+
+h6 {
+	color: gray;
+	margin: 0 0 0 5%;
+}
+
+hr {
+	border-color: lightgray;
+	margin: 2% 0 2% 0;
+}
+
+#letter {
+	background-color: darkgray;
+	height:20px;
+	width:100%;
+}
+
+#letter h4 {
+	border:gray;
+	line-height:20px;
+	color:white;
+}
+
+#songslist {
+	height: 90%;
+}
+
+#songheader { 
+	line-height: 20%;
+	padding-top: 1%;
+}
+
+#songheader h4 {
+	color: #FFFFE0;
+}
+
+#status {
+	width: 100%;
+	height: 15%;
+	background-color: black;
+	box-shadow: 3px 5px 5px #000000;
+	opacity:0.7;
+}
+
+
+
+
+
+
+
+
+
+
+#content {
+    width: 100%;
+    /* Full Width */
+	height: 5px;
+    background: #000;
+}
+
+.expand {
+    width: 100%;
+    height: 1px;
+    margin: 2px 0;
+    background: #2187e7;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.7);
+    -moz-animation: fullexpand 5s ease-out;
+    -webkit-animation: fullexpand 5s ease-out;
+}
+
+/* Full Width Animation Bar */
+@-moz-keyframes fullexpand {
+    0%  { width: 0px;
+}
+
+	100% {
+		width: 100%;
+	}	
+}
+
+@-webkit-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    };
+}
+
+#artwork {
+	width: 100%;
+	background-color: #2B2B2B;
+	height: 75%;
+	background-size: contain; 
+	
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.1)))
+
+}
+
+#controls {
+	width: 100%;
+	background: url('images/bg.jpg');
+	height: 15%;
+	z-index: 2;
+}
+
+#slider{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #333 #333 #777 #333;
+	border-radius: 25px;
+	width: 80%;
+	position: absolute;
+	height: 13px;
+	background-color: #8e8d8d;
+	background: url('images/bg-track.png') repeat top left;
+    box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 
+    				  0 1px 0 0px rgba(250, 250, 250, .5);
+    margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0; 
+}
+
+
+.volume {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	background: url('images/volume.png') no-repeat 0 -50px;
+	margin-top: -6px;
+	margin-left: auto;
+	margin-right: 83%;
+	left: 0;
+	right: 0;
+}
+.ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: url('images/handle.png') no-repeat 50% 50%;
+	font-weight: bold;
+	color: #1C94C4;
+	outline: none;
+	top: -7px;
+	margin-left: -12px;
+}
+.ui-slider-range {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	border: 0;
+	top: 0;
+	height: 100%;
+	border-radius: 25px;
+} 
+
+.statusimages {
+	height:20px;
+	width:20px;
+}
+
+.ctrlimages{
+	height:28px;
+	width:28px;
+	margin: 2% 5% 2% 5%;
+}
